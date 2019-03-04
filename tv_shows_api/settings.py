@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'genres',
     'rates',
-    'tv_shows'
+    'tv_shows',
+    'media'
 ]
 
 MIDDLEWARE = [
