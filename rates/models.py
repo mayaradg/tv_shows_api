@@ -8,4 +8,5 @@ class Rate(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     tv_show = models.ForeignKey(TvShow, on_delete=models.CASCADE)
 
-
+    def __str__(self):
+        return str(self.rate)
