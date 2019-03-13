@@ -18,9 +18,13 @@ from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
 from tv_shows.api.viewsets import TvShowViewSet
+from rates.api.viewsets import RateViewSet
+from media.api.viewsets import MediaViewSet
 
 router = routers.DefaultRouter()
 router.register(r'tvshow', TvShowViewSet)
+router.register(r'rate', RateViewSet)
+router.register(r'media', MediaViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
